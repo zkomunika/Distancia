@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distancia|Whiteboard Distance Calculator</title>
+    <link rel="shortcut icon" type="x-icon" href="images/istockphoto-1399405829-612x612-removebg-preview.png">
+    <!--Linking Font Awesome for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#home" class="nav-logo">
+                <h2 class="logo-text">Distancia</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#calculator" class="nav-link">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#abouts" class="nav-link">About Us</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section" id="home">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Whiteboard Distance Calculator</h2>
+                    <p class="description">It turns out that installing a whiteboard on a wall has an ideal/non-ideal distance. With this website we can directly calculate the best distance for installing a whiteboard. Also included are nearsightedness and farsightedness factors in the calculator if needed.</p>
+
+                    <div class="buttons">
+                        <a href="#calculator" class="button try-it-free">Try Now</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/istockphoto-1399405829-612x612-removebg-preview.png" alt="" class="hero-wrapper">
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section" id="calculator">
+            <h2 class="section-title">Calculator</h2>
+            <div class="section-content">
+                <div class="section-label">
+                    <div class="section-labelInput">
+                        <label for="height">Board Height (cm):</label>
+                        <input type="number" id="height" placeholder="Height in cm" required>
+                    </div>
+                    <div class="section-labelInput">
+                        <label for="width">Board Width (cm):</label>
+                        <input type="number" id="width" placeholder="Width in cm" required>
+                    </div>
+                    <div class="section-labelInput">
+                        <label for="mode">Select The Multiplying Factor:</label>
+                        <select id="mode">
+                            <option value="1.5">1.5x Area</option>
+                            <option value="2">2x Area</option>
+                        </select>
+                </div>
+                <button onclick="calculateDistance()">Calculate</button>
+                <h2 id="result"></h2>
+            </div>
+        </section>
+
+        <!-- Abouts Section -->
+        <section class="abouts-section" id="abouts">
+            <h2 class="section-title">About Us</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="abouts-list swiper-wrapper">
+                            <li class="about swiper-slide">
+                                <img src="images/Yusup.jpg" alt="User" class="user-image">
+                                <h3 class="name">Yusup</h3>
+                                <i class="feedback">247006111027</i>
+                                <div class="social-link-list">
+                                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/yusuptyz?igsh=cG80enNsdW5tZTY1" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </li>
+                            <li class="about swiper-slide">
+                                <img src="images/Nabil.jpg" alt="User" class="user-image">
+                                <h3 class="name">Nabil Dhia</h3>
+                                <i class="feedback">247006111019</i>
+                                <div class="social-link-list">
+                                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/nnnnnab79?igsh=MWxhZ3kzdWhpbTkxYw==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </li>
+                            <li class="about swiper-slide">
+                                <img src="images/Adi.jpg" alt="User" class="user-image">
+                                <h3 class="name">Adi M Akbar S</h3>
+                                <i class="feedback">247006111037</i>
+                                <div class="social-link-list">
+                                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/adimhmd___?igsh=MW5iYnk2eG1ncWZ5eg==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </li>
+                            <li class="about swiper-slide">
+                                <img src="images/Zaky.jpg" alt="User" class="user-image">
+                                <h3 class="name">M Zaky Al Mubarok</h3>
+                                <i class="feedback">247006111041</i>
+                                <div class="social-link-list">
+                                    <a href="https://www.facebook.com/share/1BYofQiXbv/" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/mzqmbrk04_?igsh=MWF4c2RxMGN5MjM0bw==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">Lorem, ipsum dolor.</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator">.</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
